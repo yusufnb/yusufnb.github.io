@@ -11,7 +11,7 @@ for (var i = 0; i < 10; i++) {
 		console.log(i);
 	}, 100);
 }
-{% endhightlight %}
+{% endhighlight %}
 
 It is very easy to overlook the issue with the above code. While we are expecting a serial order to be printed out, all we see in the output is the number 10. Closures come in handy here. They allow us to create a snapshot of the state and preserve it for future here. Here is how we would preserve the value of i when the callback is invoked -
 
